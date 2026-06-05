@@ -8,9 +8,15 @@ package src.org.josecastaneda.main.Controllers;
  *
  * @author Emilio
  */
-public class ProcesamientoCadenasController {
-        public String concatenadorNombre(String nombre,String apellido){
-        String nombreCompleto = nombre + " "+apellido;
-        return nombreCompleto;
+public class LogicaBooleanaController {
+    public boolean verificadorEdad(int edad){
+    if (edad > 18){
+        return true;
+        
     }
+    else {
+    return false;    
+    } 
+   } 
+    
 }
