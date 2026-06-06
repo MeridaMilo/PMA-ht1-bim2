@@ -14,4 +14,9 @@ public class CalculoNumericoController {
         float totalSalario = horasTrabajadas * pagoPorHora;
         return totalSalario;
    } 
+     public float calculoAreaTriangulo(float base,float altura){
+        float calculoAreaTriangulo = (base * altura)/2;
+        return calculoAreaTriangulo;
+   } 
 }
+

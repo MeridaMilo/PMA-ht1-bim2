@@ -47,6 +47,7 @@ public class Main {
                              System.out.print("Seleccione: ");
                              System.out.println("");
                             opcion_modulo_a = scaneador.nextInt();
+                            scaneador.nextLine();
                             switch (opcion_modulo_a) {
                                 case 1 -> {
                                     
@@ -60,8 +61,21 @@ public class Main {
                                     System.out.println(totalSalario);
         
                                 }
+                                case 2 -> {
+                                    
+                                  System.out.print("Ingrese la base");
+                                    float baseTriangulo = scaneador.nextFloat();
+                                    System.out.print("Ingrese la altura ");
+                                    float alturatriangulo = scaneador.nextFloat();
+                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                    float areaTriangulo = calculoNumerico.calculoAreaTriangulo(baseTriangulo, alturatriangulo);
+                                    System.out.print("Area Triangulo  ");
+                                    System.out.println(areaTriangulo);
+        
+                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
+                            
                         }
                     }
                     case 2 -> {
@@ -73,17 +87,18 @@ public class Main {
                              System.out.print("Seleccione: ");
                              System.out.println("");
                             opcion_modulo_b = scaneador.nextInt();
+                            scaneador.nextLine();
                             switch (opcion_modulo_b) {
                                 case 1 -> {
                                     
-                                  System.out.print("Horas Trabajadas:  ");
-                                    float horasTrabajadas = scaneador.nextFloat();
-                                    System.out.print("Pago Por hora:  ");
-                                    float pagoPorHora = scaneador.nextFloat();
-                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
-                                    float totalSalario = calculoNumerico.calculoSalario(horasTrabajadas, pagoPorHora);
-                                    System.out.print("Resultado:  ");
-                                    System.out.println(totalSalario);
+                                  System.out.print("Ingrese el Nombre  ");
+                                    String nombre = scaneador.nextLine();
+                                    System.out.print("Ingrese el Apellido");
+                                    String apellido = scaneador.nextLine();                            
+                                    ProcesamientoCadenasController nombreApellido = new ProcesamientoCadenasController();                                   
+                                    String nombreCompleto = nombreApellido.concatenadorNombre(nombre, apellido);
+                                    System.out.print("Nombre Completo  ");
+                                    System.out.println(nombreCompleto);
         
                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
@@ -100,6 +115,7 @@ public class Main {
                              System.out.print("Seleccione: ");
                              System.out.println("");
                             opcion_modulo_c = scaneador.nextInt();
+                            scaneador.nextLine();
                             switch (opcion_modulo_c) {
                                 case 1 -> {
                                     
