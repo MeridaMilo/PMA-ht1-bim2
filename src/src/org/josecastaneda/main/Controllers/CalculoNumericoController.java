@@ -18,5 +18,9 @@ public class CalculoNumericoController {
         float calculoAreaTriangulo = (base * altura)/2;
         return calculoAreaTriangulo;
    } 
+        public float calculoPromedio(float calificacion1,float calificacion2, float calificacion3){
+        float calculoPromedio = (calificacion1 + calificacion2 + calificacion3)/3;
+        return calculoPromedio;
+   } 
 }
 

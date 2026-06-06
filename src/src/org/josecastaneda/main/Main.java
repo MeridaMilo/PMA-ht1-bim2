@@ -43,6 +43,13 @@ public class Main {
                             System.out.println("1. Calculadora de Salario");
                             System.out.println("2. Área de un Triángulo:");
                             System.out.println("3. Promedio Académico");
+                            System.out.println("4. Promedio Académico");
+                            System.out.println("5. Promedio Académico");
+                            System.out.println("6. Promedio Académico");
+                            System.out.println("7. Promedio Académico");
+                            System.out.println("8. Promedio Académico");
+                            System.out.println("9. Promedio Académico");
+                            System.out.println("10. Promedio Académico");
                             System.out.println("99. Regresar Menu Principal");
                              System.out.print("Seleccione: ");
                              System.out.println("");
@@ -73,6 +80,36 @@ public class Main {
                                     System.out.println(areaTriangulo);
         
                                 }
+                                case 3 -> {
+                                    
+                                  System.out.print("Ingrese el promedio");
+                                    System.out.print("Ingrese la calificacion 1 ");
+                                    float calculoPromedio1 = scaneador.nextFloat();
+                                    System.out.print("Ingrese la calificacion 2 ");
+                                    float calculoPromedio2 = scaneador.nextFloat();
+                                    System.out.print("Ingrese la calificacion 3 ");
+                                    float calculoPromedio3 = scaneador.nextFloat();
+                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                    float calculoPromedio4 = calculoNumerico.calculoPromedio(calculoPromedio1, calculoPromedio2, calculoPromedio3);
+                                    System.out.print("Promedio:  ");
+                                    System.out.println(calculoPromedio4);
+        
+                                } 
+                                 case 4 -> {
+                                    
+                                  System.out.print("Ingrese el promedio");
+                                    System.out.print("Ingrese la calificacion 1 ");
+                                    float calculoPromedio1 = scaneador.nextFloat();
+                                    System.out.print("Ingrese la calificacion 2 ");
+                                    float calculoPromedio2 = scaneador.nextFloat();
+                                    System.out.print("Ingrese la calificacion 3 ");
+                                    float calculoPromedio3 = scaneador.nextFloat();
+                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                    float calculoPromedio4 = calculoNumerico.calculoPromedio(calculoPromedio1, calculoPromedio2, calculoPromedio3);
+                                    System.out.print("Promedio:  ");
+                                    System.out.println(calculoPromedio4);
+        
+                                } 
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                             
