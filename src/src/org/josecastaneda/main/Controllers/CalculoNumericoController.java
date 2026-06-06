@@ -22,5 +22,9 @@ public class CalculoNumericoController {
         float calculoPromedio = (calificacion1 + calificacion2 + calificacion3)/3;
         return calculoPromedio;
    } 
+        public float calculoGrados(float gradosCelsius){
+        float calculoGrados = (gradosCelsius * 1.8f) + 32;
+        return calculoGrados;
+}
 }
 

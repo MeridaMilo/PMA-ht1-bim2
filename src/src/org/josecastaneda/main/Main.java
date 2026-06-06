@@ -43,7 +43,7 @@ public class Main {
                             System.out.println("1. Calculadora de Salario");
                             System.out.println("2. Área de un Triángulo:");
                             System.out.println("3. Promedio Académico");
-                            System.out.println("4. Promedio Académico");
+                            System.out.println("4. Convertidor de Temperatura");
                             System.out.println("5. Promedio Académico");
                             System.out.println("6. Promedio Académico");
                             System.out.println("7. Promedio Académico");
@@ -97,17 +97,12 @@ public class Main {
                                 } 
                                  case 4 -> {
                                     
-                                  System.out.print("Ingrese el promedio");
-                                    System.out.print("Ingrese la calificacion 1 ");
-                                    float calculoPromedio1 = scaneador.nextFloat();
-                                    System.out.print("Ingrese la calificacion 2 ");
-                                    float calculoPromedio2 = scaneador.nextFloat();
-                                    System.out.print("Ingrese la calificacion 3 ");
-                                    float calculoPromedio3 = scaneador.nextFloat();
+                                  System.out.print("Ingrese la temperatura en celsius ");
+                                    float calculoTemperatura1 = scaneador.nextFloat();
                                     CalculoNumericoController calculoNumerico = new CalculoNumericoController();
-                                    float calculoPromedio4 = calculoNumerico.calculoPromedio(calculoPromedio1, calculoPromedio2, calculoPromedio3);
-                                    System.out.print("Promedio:  ");
-                                    System.out.println(calculoPromedio4);
+                                    float calculoTemperatura2 = calculoNumerico.calculoGrados(calculoTemperatura1);
+                                    System.out.print("temperatura a Fahrenheit:  ");
+                                    System.out.println(calculoTemperatura2);
         
                                 } 
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
