@@ -45,8 +45,8 @@ public class Main {
                             System.out.println("3. Promedio Académico");
                             System.out.println("4. Convertidor de Temperatura");
                             System.out.println("5. Perímetro de Círculo");
-                            System.out.println("6. Promedio Académico");
-                            System.out.println("7. Promedio Académico");
+                            System.out.println("6. Volumen de un Cilindro");
+                            System.out.println("7. Hipotenusa1");
                             System.out.println("8. Promedio Académico");
                             System.out.println("9. Promedio Académico");
                             System.out.println("10. Promedio Académico");
@@ -103,28 +103,35 @@ public class Main {
                                     float calculoTemperatura2 = calculoNumerico.calculoGrados(calculoTemperatura1);
                                     System.out.print("temperatura a Fahrenheit:  ");
                                     System.out.println(calculoTemperatura2);
-        
                                 } 
                                  case 5 -> {
                                      System.out.print("Ingrese el radio del circulo: ");
                                         float calculoRadio1 = scaneador.nextFloat();
-                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                        CalculoNumericoController calculoNumerico = new CalculoNumericoController();
                                         float calculoPerimetro2 = calculoNumerico.calculoPerimetroCirculo(calculoRadio1);
-
-                                    System.out.print("El perimetro del circulo es: ");
-                                    System.out.println(calculoPerimetro2);
+                                     System.out.print("El perimetro del circulo es: ");
+                                     System.out.println(calculoPerimetro2);
                                 } 
-                                 
                                  case 6 -> {
-                                     System.out.print("Ingrese el radio del circulo: ");
-                                        float calculoRadio1 = scaneador.nextFloat();
-                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
-                                        float calculoPerimetro2 = calculoNumerico.calculoPerimetroCirculo(calculoRadio1);
-
-                                    System.out.print("El perimetro del circulo es: ");
-                                    System.out.println(calculoPerimetro2);
-                                } 
-                                 
+                                System.out.print("Ingrese el radio del cilindro: ");
+                                float calculoRadio1 = scaneador.nextFloat();
+                                System.out.print("Ingrese la altura del cilindro: ");
+                                float calculoAltura1 = scaneador.nextFloat();
+                                CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                float calculoVolumen2 = calculoNumerico.calculoVolumenCilindro(calculoRadio1, calculoAltura1);
+                                System.out.print("El volumen del cilindro es: ");
+                                System.out.println(calculoVolumen2);
+                               }
+                                 case 7 -> {
+                                System.out.print("Ingrese la longitud del cateto A: ");
+                                float calculoCatetoA1 = scaneador.nextFloat();
+                                System.out.print("Ingrese la longitud del cateto B: ");
+                                float calculoCatetoB1 = scaneador.nextFloat();
+                                CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                float calculoHipotenusa2 = calculoNumerico.calculoHipotenusa(calculoCatetoA1, calculoCatetoB1);
+                                System.out.print("La longitud de la hipotenusa es: ");
+                                System.out.println(calculoHipotenusa2);
+                               }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                             
