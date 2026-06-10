@@ -140,6 +140,14 @@ public class Main {
                                 System.out.print("El equivalente en minutos totales es: ");
                                 System.out.println(calculoMinutos2);
                                }
+                                 case 9 -> {
+                                System.out.print("Ingrese la cantidad de dias: ");
+                                int calculoDias1 = scaneador.nextInt();
+                                CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                int calculoMinutos2 = calculoNumerico.diasAMinutos(calculoDias1);
+                                System.out.print("El equivalente en minutos totales es: ");
+                                System.out.println(calculoMinutos2);
+                               }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                             

@@ -26,5 +26,26 @@ public class CalculoNumericoController {
         float calculoGrados = (gradosCelsius * 1.8f) + 32;
         return calculoGrados;
 }
+        public float calculoPerimetroCirculo(float radio){
+    float calculoPerimetro = 2 * (float)Math.PI * radio;
+    return calculoPerimetro;
 }
+        public float calculoVolumenCilindro(float radio, float altura){
+    // Fórmula: Pi * (radio^2) * altura
+    float calculoVolumen = (float)Math.PI * (float)Math.pow(radio, 2) * altura;
+    return calculoVolumen;
+}
+        public float calculoHipotenusa(float catetoA, float catetoB) {
+        float a2 = (float) Math.pow(catetoA, 2);
+        float b2 = (float) Math.pow(catetoB, 2);
+        float suma = a2 + b2;
+        float hipotenusa = (float) Math.sqrt(suma);
 
+        return hipotenusa;
+    }
+        public int diasAMinutos(int dias) {
+        int horas = dias * 24;
+        int minutos = horas * 60;
+        return minutos;
+    }
+}
