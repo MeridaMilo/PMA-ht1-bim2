@@ -52,4 +52,9 @@ public class CalculoNumericoController {
         int resto = dividendo % divisor;
         return resto;
     }
+          public int potenciaCubo(int numero) {
+        int cuadrado = numero * numero;
+        int cubo = cuadrado * numero;
+        return cubo;
+    }
 }

@@ -41,15 +41,15 @@ public class Main {
                     case 1 -> {
                         while (opcion_modulo_a!=99){
                             System.out.println("1. Calculadora de Salario");
-                            System.out.println("2. Área de un Triángulo:");
-                            System.out.println("3. Promedio Académico");
+                            System.out.println("2. Area de un Triangulo");
+                            System.out.println("3. Promedio Academico");
                             System.out.println("4. Convertidor de Temperatura");
-                            System.out.println("5. Perímetro de Círculo");
+                            System.out.println("5. Perimetro de Circulo");
                             System.out.println("6. Volumen de un Cilindro");
                             System.out.println("7. Hipotenusa");
-                            System.out.println("8. Días a Minutos");
-                            System.out.println("9. Resto de División");
-                            System.out.println("10. Promedio Académico");
+                            System.out.println("8. Dias a Minutos");
+                            System.out.println("9. Resto de Division");
+                            System.out.println("10. Potencia al Cubo");
                             System.out.println("99. Regresar Menu Principal");
                              System.out.print("Seleccione: ");
                              System.out.println("");
@@ -149,8 +149,16 @@ public class Main {
                                 int calculoResto2 = calculoNumerico.restoDivision(calculoDividendo1, calculoDivisor1);
                                 System.out.print("El residuo de la division es: ");
                                 System.out.println(calculoResto2);
-                               }
-                                 
+                                }
+                                case 10 -> {
+                                System.out.print("Ingrese el numero que desea elevar al cubo: ");
+                                int calculoNumero1 = scaneador.nextInt();
+
+                                CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                int calculoCubo2 = calculoNumerico.potenciaCubo(calculoNumero1);
+                                System.out.print("El resultado del numero al cubo es: ");
+                                System.out.println(calculoCubo2);
+                               }   
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                             
