@@ -47,7 +47,7 @@ public class Main {
                             System.out.println("5. Perímetro de Círculo");
                             System.out.println("6. Volumen de un Cilindro");
                             System.out.println("7. Hipotenusa");
-                            System.out.println("8. Promedio Académico");
+                            System.out.println("8. Días a Minutos");
                             System.out.println("9. Promedio Académico");
                             System.out.println("10. Promedio Académico");
                             System.out.println("99. Regresar Menu Principal");
