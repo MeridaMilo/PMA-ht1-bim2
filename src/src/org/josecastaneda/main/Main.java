@@ -46,7 +46,7 @@ public class Main {
                             System.out.println("4. Convertidor de Temperatura");
                             System.out.println("5. Perímetro de Círculo");
                             System.out.println("6. Volumen de un Cilindro");
-                            System.out.println("7. Hipotenusa1");
+                            System.out.println("7. Hipotenusa");
                             System.out.println("8. Promedio Académico");
                             System.out.println("9. Promedio Académico");
                             System.out.println("10. Promedio Académico");
@@ -131,6 +131,14 @@ public class Main {
                                 float calculoHipotenusa2 = calculoNumerico.calculoHipotenusa(calculoCatetoA1, calculoCatetoB1);
                                 System.out.print("La longitud de la hipotenusa es: ");
                                 System.out.println(calculoHipotenusa2);
+                               }
+                                 case 8 -> {
+                                System.out.print("Ingrese la cantidad de dias: ");
+                                int calculoDias1 = scaneador.nextInt();
+                                CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                int calculoMinutos2 = calculoNumerico.diasAMinutos(calculoDias1);
+                                System.out.print("El equivalente en minutos totales es: ");
+                                System.out.println(calculoMinutos2);
                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
