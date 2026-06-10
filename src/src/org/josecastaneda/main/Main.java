@@ -44,7 +44,7 @@ public class Main {
                             System.out.println("2. Área de un Triángulo:");
                             System.out.println("3. Promedio Académico");
                             System.out.println("4. Convertidor de Temperatura");
-                            System.out.println("5. Promedio Académico");
+                            System.out.println("5. Perímetro de Círculo");
                             System.out.println("6. Promedio Académico");
                             System.out.println("7. Promedio Académico");
                             System.out.println("8. Promedio Académico");
@@ -105,6 +105,26 @@ public class Main {
                                     System.out.println(calculoTemperatura2);
         
                                 } 
+                                 case 5 -> {
+                                     System.out.print("Ingrese el radio del circulo: ");
+                                        float calculoRadio1 = scaneador.nextFloat();
+                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                        float calculoPerimetro2 = calculoNumerico.calculoPerimetroCirculo(calculoRadio1);
+
+                                    System.out.print("El perimetro del circulo es: ");
+                                    System.out.println(calculoPerimetro2);
+                                } 
+                                 
+                                 case 6 -> {
+                                     System.out.print("Ingrese el radio del circulo: ");
+                                        float calculoRadio1 = scaneador.nextFloat();
+                                    CalculoNumericoController calculoNumerico = new CalculoNumericoController();
+                                        float calculoPerimetro2 = calculoNumerico.calculoPerimetroCirculo(calculoRadio1);
+
+                                    System.out.print("El perimetro del circulo es: ");
+                                    System.out.println(calculoPerimetro2);
+                                } 
+                                 
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                             
