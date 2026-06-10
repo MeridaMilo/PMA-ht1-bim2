@@ -48,7 +48,7 @@ public class Main {
                             System.out.println("6. Volumen de un Cilindro");
                             System.out.println("7. Hipotenusa");
                             System.out.println("8. Días a Minutos");
-                            System.out.println("9. Promedio Académico");
+                            System.out.println("9. Resto de División");
                             System.out.println("10. Promedio Académico");
                             System.out.println("99. Regresar Menu Principal");
                              System.out.print("Seleccione: ");
@@ -141,13 +141,16 @@ public class Main {
                                 System.out.println(calculoMinutos2);
                                }
                                  case 9 -> {
-                                System.out.print("Ingrese la cantidad de dias: ");
-                                int calculoDias1 = scaneador.nextInt();
+                                System.out.print("Ingrese el dividendo  ");
+                                int calculoDividendo1 = scaneador.nextInt();
+                                System.out.print("Ingrese el divisor: ");
+                                int calculoDivisor1 = scaneador.nextInt();
                                 CalculoNumericoController calculoNumerico = new CalculoNumericoController();
-                                int calculoMinutos2 = calculoNumerico.diasAMinutos(calculoDias1);
-                                System.out.print("El equivalente en minutos totales es: ");
-                                System.out.println(calculoMinutos2);
+                                int calculoResto2 = calculoNumerico.restoDivision(calculoDividendo1, calculoDivisor1);
+                                System.out.print("El residuo de la division es: ");
+                                System.out.println(calculoResto2);
                                }
+                                 
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                             

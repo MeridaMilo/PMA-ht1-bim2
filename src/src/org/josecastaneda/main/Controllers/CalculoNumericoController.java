@@ -48,4 +48,8 @@ public class CalculoNumericoController {
         int minutos = horas * 60;
         return minutos;
     }
+         public int restoDivision(int dividendo, int divisor) {
+        int resto = dividendo % divisor;
+        return resto;
+    }
 }
