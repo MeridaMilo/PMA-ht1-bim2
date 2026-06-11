@@ -293,6 +293,8 @@ public class Main {
                             System.out.println("4. Login simple");
                             System.out.println("5. Rango Numerico");
                             System.out.println("6. Mayor de Dos");
+                            System.out.println("7. Año Bisiesto");
+                            System.out.println("8. Aprobado/Reprobado");
                             System.out.println("99. Regresar Menu Principal");
                             System.out.print("Seleccione: ");
                             System.out.println("");
@@ -361,6 +363,15 @@ public class Main {
                                int numeroMayor2 = logicaBooleana.obtenerMayor(calculoNum1, calculoNum2);
                                System.out.print("El numero mayor de los dos es: ");
                                System.out.println(numeroMayor2);
+                                }
+                                case 7 -> {
+                                    
+                               System.out.print("Ingrese un año para evaluar: ");
+                               int calculoAño1 = scaneador.nextInt();
+                               LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                               boolean esBisiesto2 = logicaBooleana.esAñoBisiesto(calculoAño1);
+                               System.out.print("¿El año ingresado es bisiesto?: ");
+                               System.out.println(esBisiesto2);
                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
