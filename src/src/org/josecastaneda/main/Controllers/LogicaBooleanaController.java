@@ -68,4 +68,20 @@ public class LogicaBooleanaController {
         return false;
     }
 }
+    public boolean estaAprobado(int notaFinal) {
+    // Evaluamos si la nota es mayor o igual a 60
+    if (notaFinal >= 60) {
+        return true;
+    } else {
+        return false;
+    }
+}
+    public boolean validadorTriangulo(int ladoA, int ladoB, int ladoC) {
+    // Verificamos que la suma de cada par de lados sea mayor al tercero
+    if ((ladoA + ladoB > ladoC) && (ladoA + ladoC > ladoB) && (ladoB + ladoC > ladoA)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 }

@@ -373,6 +373,28 @@ public class Main {
                                System.out.print("¿El año ingresado es bisiesto?: ");
                                System.out.println(esBisiesto2);
                                 }
+                                case 8 -> {
+                                    
+                               System.out.print("Ingrese la nota final del estudiante: ");
+                               int calculoNota1 = scaneador.nextInt();
+                               LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                               boolean resultadoAprobado2 = logicaBooleana.estaAprobado(calculoNota1);
+                               System.out.print("¿El estudiante esta aprobado?: ");
+                               System.out.println(resultadoAprobado2);
+                                }
+                                case 9 -> {
+                                    
+                               System.out.print("Ingrese la longitud del lado A: ");
+                               int calculoLadoA1 = scaneador.nextInt();
+                               System.out.print("Ingrese la longitud del lado B: ");
+                               int calculoLadoB1 = scaneador.nextInt();
+                               System.out.print("Ingrese la longitud del lado C: ");
+                               int calculoLadoC1 = scaneador.nextInt();
+                               LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                               boolean esTriangulo2 = logicaBooleana.validadorTriangulo(calculoLadoA1, calculoLadoB1, calculoLadoC1);
+                               System.out.print("¿Es posible formar un triangulo con estas medidas?: ");
+                               System.out.println(esTriangulo2);
+                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }
