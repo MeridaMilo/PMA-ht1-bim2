@@ -18,5 +18,12 @@ public class LogicaBooleanaController {
     return false;    
     } 
    } 
-    
+    public boolean esNumeroPar(int numero) {
+    // Si el residuo de dividir el número entre 2 es cero, es par (true)
+    if (numero % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}   
 }

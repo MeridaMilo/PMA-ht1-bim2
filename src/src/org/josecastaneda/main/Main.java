@@ -307,6 +307,15 @@ public class Main {
                                     System.out.println(calculoDeEdad);
         
                                 }
+                                case 2 -> {
+                                    
+                                System.out.print("Ingrese un numero entero: ");
+                                int calculoNumero1 = scaneador.nextInt();
+                                LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                                boolean esPar2 = logicaBooleana.esNumeroPar(calculoNumero1);
+                                System.out.print("¿El numero ingresado es par?: ");
+                                System.out.println(esPar2);
+                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }
