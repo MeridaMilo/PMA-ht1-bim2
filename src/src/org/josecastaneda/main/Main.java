@@ -219,12 +219,12 @@ public class Main {
                                  }
                                  case 5 -> {
                                     
-                               System.out.print("Ingrese una palabra para invertir: ");
-                               String calculoPalabra1 = scaneador.next();
-                               ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
-                               String calculoInvertido2 = procesamientoCadenas.inversorTexto(calculoPalabra1);
-                               System.out.print("La palabra al reves es: ");
-                                System.out.println(calculoInvertido2);
+                                System.out.print("Ingrese una sola letra: ");
+                                char calculoCaracter1 = scaneador.next().charAt(0);
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                boolean esVocal2 = procesamientoCadenas.detectorVocales(calculoCaracter1);
+                                System.out.print("¿La letra ingresada es una vocal?: ");
+                                System.out.println(esVocal2);
                                  }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }

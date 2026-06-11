@@ -18,8 +18,20 @@ public class ProcesamientoCadenasController {
     return longitud;
 }
         public String inversorTexto(String palabra) {
-    // StringBuilder nos permite usar el método reverse() de forma directa
     String palabraInvertida = new StringBuilder(palabra).reverse().toString();
     return palabraInvertida;
+}
+        public boolean detectorVocales(char caracter) {
+    char letraMinuscula = Character.toLowerCase(caracter); 
+    switch (letraMinuscula) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return true; 
+        default:
+            return false; 
+    }
 }
 }
