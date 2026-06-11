@@ -38,4 +38,8 @@ public class ProcesamientoCadenasController {
     String iniciales = "" + nombre.charAt(0) + apellido.charAt(0);
     return iniciales;
 }
+        public String normalizadorMayusculas(String textoMixto) {
+    String textoEnMayusculas = textoMixto.toUpperCase();
+    return textoEnMayusculas;
+}
 }

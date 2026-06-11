@@ -228,6 +228,16 @@ public class Main {
                                 System.out.print("Las iniciales son: ");
                                 System.out.println(calculoIniciales2.toUpperCase());
                                  }
+                                case 6 -> {
+                                    
+                                System.out.print("Ingrese un texto en mayusculas y minusculas: ");
+                                scaneador.nextLine(); 
+                                String calculoTexto1 = scaneador.nextLine();
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                String calculoMayusculas2 = procesamientoCadenas.normalizadorMayusculas(calculoTexto1);
+                                System.out.print("Texto normalizado: ");
+                                System.out.println(calculoMayusculas2);
+                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }
