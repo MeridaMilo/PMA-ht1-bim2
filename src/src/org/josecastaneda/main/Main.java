@@ -316,6 +316,15 @@ public class Main {
                                 System.out.print("¿El numero ingresado es par?: ");
                                 System.out.println(esPar2);
                                 }
+                                 case 3 -> {
+                                    
+                                System.out.print("Ingrese el color del semaforo (Verde, Amarillo, Rojo): ");
+                                String calculoColor1 = scaneador.next();
+                                LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                                String calculoAccion2 = logicaBooleana.controlSemaforo(calculoColor1);
+                                System.out.print("La accion a tomar es: ");
+                                System.out.println(calculoAccion2);
+                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }

@@ -19,11 +19,23 @@ public class LogicaBooleanaController {
     } 
    } 
     public boolean esNumeroPar(int numero) {
-    // Si el residuo de dividir el número entre 2 es cero, es par (true)
     if (numero % 2 == 0) {
         return true;
     } else {
         return false;
     }
-}   
+}
+    public String controlSemaforo(String color) {
+    String colorMinuscula = color.toLowerCase();
+    switch (colorMinuscula) {
+        case "verde":
+            return "Avanzar";
+        case "amarillo":
+            return "Precaucion";
+        case "rojo":
+            return "Detenerse";
+        default:
+            return "Color no valido";
+    }
+}
 }
