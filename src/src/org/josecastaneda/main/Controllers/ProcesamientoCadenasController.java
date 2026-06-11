@@ -13,4 +13,8 @@ public class ProcesamientoCadenasController {
         String nombreCompleto = nombre + " "+apellido;
         return nombreCompleto;
     }
+        public int contadorLongitud(String palabra) {
+    int longitud = palabra.length();
+    return longitud;
+}
 }

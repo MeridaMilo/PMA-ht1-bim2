@@ -169,6 +169,9 @@ public class Main {
                             System.out.println("1. Concatenador de Nombre");
                             System.out.println("2. Contador de Longitud:");
                             System.out.println("3. xxxxxxxxx");
+                            System.out.println("3. xxxxxxxxx");
+                            System.out.println("3. xxxxxxxxx");
+                            System.out.println("3. xxxxxxxxx");
                             System.out.println("99. Regresar Menu Principal");
                              System.out.print("Seleccione: ");
                              System.out.println("");
@@ -186,6 +189,24 @@ public class Main {
                                     System.out.print("Nombre Completo  ");
                                     System.out.println(nombreCompleto);
         
+                                }
+                                case 2 -> {
+                                    
+                               System.out.print("Ingrese una palabra: ");
+                               String calculoPalabra1 = scaneador.next();
+                               ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                               int calculoLongitud2 = procesamientoCadenas.contadorLongitud(calculoPalabra1);
+                               System.out.print("La cantidad de letras que tiene la palabra es: ");
+                               System.out.println(calculoLongitud2);
+                                }
+                                 case 3 -> {
+                                    
+                               System.out.print("Ingrese una palabra: ");
+                               String calculoPalabra1 = scaneador.next();
+                               ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                               int calculoLongitud2 = procesamientoCadenas.contadorLongitud(calculoPalabra1);
+                               System.out.print("La cantidad de letras que tiene la palabra es: ");
+                               System.out.println(calculoLongitud2);
                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
