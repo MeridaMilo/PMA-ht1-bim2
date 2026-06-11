@@ -208,6 +208,24 @@ public class Main {
                                System.out.print("La cantidad de letras que tiene la palabra es: ");
                                System.out.println(calculoLongitud2);
                                 }
+                                 case 4 -> {
+                                    
+                               System.out.print("Ingrese una palabra para invertir: ");
+                               String calculoPalabra1 = scaneador.next();
+                               ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                               String calculoInvertido2 = procesamientoCadenas.inversorTexto(calculoPalabra1);
+                               System.out.print("La palabra al reves es: ");
+                                System.out.println(calculoInvertido2);
+                                 }
+                                 case 5 -> {
+                                    
+                               System.out.print("Ingrese una palabra para invertir: ");
+                               String calculoPalabra1 = scaneador.next();
+                               ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                               String calculoInvertido2 = procesamientoCadenas.inversorTexto(calculoPalabra1);
+                               System.out.print("La palabra al reves es: ");
+                                System.out.println(calculoInvertido2);
+                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }

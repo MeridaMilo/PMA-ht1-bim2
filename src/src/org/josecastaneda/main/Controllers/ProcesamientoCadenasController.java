@@ -17,4 +17,9 @@ public class ProcesamientoCadenasController {
     int longitud = palabra.length();
     return longitud;
 }
+        public String inversorTexto(String palabra) {
+    // StringBuilder nos permite usar el método reverse() de forma directa
+    String palabraInvertida = new StringBuilder(palabra).reverse().toString();
+    return palabraInvertida;
+}
 }
