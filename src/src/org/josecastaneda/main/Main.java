@@ -173,6 +173,9 @@ public class Main {
                             System.out.println("5. Extractor de Iniciales");
                             System.out.println("6. Normalizador a Mayúsculas");
                             System.out.println("7. Conversor Binario");
+                            System.out.println("8. Repetidor de Palabras");
+                            System.out.println("9. Validador de Password");
+                            System.out.println("10. Generador de Email");
                             System.out.println("99. Regresar Menu Principal");
                             System.out.print("Seleccione: ");
                             System.out.println("");
@@ -257,6 +260,15 @@ public class Main {
                                 System.out.print("Resultado: ");
                                 procesamientoCadenas.repetidorPalabras(calculoPalabra1, calculoVeces1);    
                                 }
+                                case 9 -> {
+                                System.out.print("Ingrese la contrasenia a validar: ");
+                                String calculoPassword1 = scaneador.next();
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                String calculoValidacion2 = procesamientoCadenas.validadorPassword(calculoPassword1);
+                                System.out.print("El estado de la contrasenia es: ");
+                                System.out.println(calculoValidacion2);
+                                    }
+                                
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }

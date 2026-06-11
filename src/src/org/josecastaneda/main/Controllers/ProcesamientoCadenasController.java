@@ -56,4 +56,12 @@ public class ProcesamientoCadenasController {
     }
     System.out.println();
 }
+        public String validadorPassword(String password) {
+  
+    if (password.length() > 8) {
+        return "Segura";
+    } else {
+        return "Insegura";
+    }
+}
 }
