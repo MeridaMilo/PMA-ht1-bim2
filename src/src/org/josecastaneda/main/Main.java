@@ -288,12 +288,14 @@ public class Main {
                     case 3 -> {
                         while (opcion_modulo_c!=99){
                             System.out.println("1. Verificador de Edad");
-                            System.out.println("2. Número Par");
-                            System.out.println("3. Semáforo");
-                            System.out.println("3. Rango Numérico");
+                            System.out.println("2. Numero Par");
+                            System.out.println("3. Semaforo");
+                            System.out.println("4. Login simple");
+                            System.out.println("5. Rango Numerico");
+                            System.out.println("6. Mayor de Dos");
                             System.out.println("99. Regresar Menu Principal");
-                             System.out.print("Seleccione: ");
-                             System.out.println("");
+                            System.out.print("Seleccione: ");
+                            System.out.println("");
                             opcion_modulo_c = scaneador.nextInt();
                             scaneador.nextLine();
                             switch (opcion_modulo_c) {
@@ -324,6 +326,41 @@ public class Main {
                                 String calculoAccion2 = logicaBooleana.controlSemaforo(calculoColor1);
                                 System.out.print("La accion a tomar es: ");
                                 System.out.println(calculoAccion2);
+                                }
+                                 case 4 -> {
+                                    
+                                System.out.print("Ingrese su nombre de usuario: ");
+                                String calculoUsuario1 = scaneador.next();
+                                System.out.print("Ingrese su contrasenia: ");
+                                String calculoPassword1 = scaneador.next();
+                                LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                                boolean accesoConcedido2 = logicaBooleana.loginSimple(calculoUsuario1, calculoPassword1);
+                                System.out.print("¿Acceso concedido?: ");
+                                System.out.println(accesoConcedido2);
+                                }
+                                 case 5 -> {
+                                    
+                               System.out.print("Ingrese el numero a evaluar: ");
+                               int calculoNum1 = scaneador.nextInt();
+                               System.out.print("Ingrese el limite minimo del rango: ");
+                               int calculoMin1 = scaneador.nextInt();
+                               System.out.print("Ingrese el limite maximo del rango: ");
+                               int calculoMax1 = scaneador.nextInt();
+                               LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                               boolean resultadoRango2 = logicaBooleana.estaEnRango(calculoNum1, calculoMin1, calculoMax1);
+                               System.out.print("¿El numero esta dentro del rango?: ");
+                               System.out.println(resultadoRango2);
+                               }
+                                case 6 -> {
+                                    
+                               System.out.print("Ingrese el primer numero: ");
+                               int calculoNum1 = scaneador.nextInt();
+                               System.out.print("Ingrese el segundo numero: ");
+                               int calculoNum2 = scaneador.nextInt();
+                               LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                               int numeroMayor2 = logicaBooleana.obtenerMayor(calculoNum1, calculoNum2);
+                               System.out.print("El numero mayor de los dos es: ");
+                               System.out.println(numeroMayor2);
                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
