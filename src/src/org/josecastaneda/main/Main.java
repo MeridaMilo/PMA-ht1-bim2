@@ -268,6 +268,18 @@ public class Main {
                                 System.out.print("El estado de la contrasenia es: ");
                                 System.out.println(calculoValidacion2);
                                     }
+                                case 10 -> {
+                                System.out.print("Ingrese el primer nombre: ");
+                                String calculoNombre1 = scaneador.next();
+                                System.out.print("Ingrese el primer apellido: ");
+                                String calculoApellido1 = scaneador.next();
+                                System.out.print("Ingrese el dominio (ej: gmail.com, kinal.edu.gt): ");
+                                String calculoDominio1 = scaneador.next();
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                String calculoEmail2 = procesamientoCadenas.generadorEmail(calculoNombre1, calculoApellido1, calculoDominio1);
+                                System.out.print("El correo electronico generado es: ");
+                                System.out.println(calculoEmail2);
+                                    }
                                 
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }

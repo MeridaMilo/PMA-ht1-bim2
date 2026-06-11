@@ -64,4 +64,8 @@ public class ProcesamientoCadenasController {
         return "Insegura";
     }
 }
+        public String generadorEmail(String nombre, String apellido, String dominio) {
+    String correoCompleto = nombre + "." + apellido + "@" + dominio;
+    return correoCompleto.toLowerCase();
+}
 }
