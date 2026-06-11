@@ -168,10 +168,10 @@ public class Main {
                         while (opcion_modulo_b!=99){
                             System.out.println("1. Concatenador de Nombre");
                             System.out.println("2. Contador de Longitud:");
-                            System.out.println("3. xxxxxxxxx");
-                            System.out.println("3. xxxxxxxxx");
-                            System.out.println("3. xxxxxxxxx");
-                            System.out.println("3. xxxxxxxxx");
+                            System.out.println("3. Inversor de Texto");
+                            System.out.println("4. Detector de Vocales");
+                            System.out.println("5. Extractor de Iniciales");
+                            System.out.println("6. Normalizador a Mayúsculas");
                             System.out.println("99. Regresar Menu Principal");
                              System.out.print("Seleccione: ");
                              System.out.println("");
@@ -201,15 +201,6 @@ public class Main {
                                 }
                                  case 3 -> {
                                     
-                               System.out.print("Ingrese una palabra: ");
-                               String calculoPalabra1 = scaneador.next();
-                               ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
-                               int calculoLongitud2 = procesamientoCadenas.contadorLongitud(calculoPalabra1);
-                               System.out.print("La cantidad de letras que tiene la palabra es: ");
-                               System.out.println(calculoLongitud2);
-                                }
-                                 case 4 -> {
-                                    
                                System.out.print("Ingrese una palabra para invertir: ");
                                String calculoPalabra1 = scaneador.next();
                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
@@ -217,7 +208,7 @@ public class Main {
                                System.out.print("La palabra al reves es: ");
                                 System.out.println(calculoInvertido2);
                                  }
-                                 case 5 -> {
+                                 case 4 -> {
                                     
                                 System.out.print("Ingrese una sola letra: ");
                                 char calculoCaracter1 = scaneador.next().charAt(0);
@@ -225,6 +216,17 @@ public class Main {
                                 boolean esVocal2 = procesamientoCadenas.detectorVocales(calculoCaracter1);
                                 System.out.print("¿La letra ingresada es una vocal?: ");
                                 System.out.println(esVocal2);
+                                 }
+                                case 5 -> {
+                                    
+                                System.out.print("Ingrese su primer nombre: ");
+                                String calculoNombre1 = scaneador.next();
+                                System.out.print("Ingrese su primer apellido: ");
+                                String calculoApellido1 = scaneador.next();
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                String calculoIniciales2 = procesamientoCadenas.extractorIniciales(calculoNombre1, calculoApellido1);
+                                System.out.print("Las iniciales son: ");
+                                System.out.println(calculoIniciales2.toUpperCase());
                                  }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }

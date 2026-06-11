@@ -34,4 +34,8 @@ public class ProcesamientoCadenasController {
             return false; 
     }
 }
+        public String extractorIniciales(String nombre, String apellido) {
+    String iniciales = "" + nombre.charAt(0) + apellido.charAt(0);
+    return iniciales;
+}
 }
