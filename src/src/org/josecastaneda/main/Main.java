@@ -295,6 +295,8 @@ public class Main {
                             System.out.println("6. Mayor de Dos");
                             System.out.println("7. Año Bisiesto");
                             System.out.println("8. Aprobado/Reprobado");
+                            System.out.println("9. Validador de Triangulo");
+                            System.out.println("10. Comparador de Cadenas");
                             System.out.println("99. Regresar Menu Principal");
                             System.out.print("Seleccione: ");
                             System.out.println("");
@@ -394,6 +396,17 @@ public class Main {
                                boolean esTriangulo2 = logicaBooleana.validadorTriangulo(calculoLadoA1, calculoLadoB1, calculoLadoC1);
                                System.out.print("¿Es posible formar un triangulo con estas medidas?: ");
                                System.out.println(esTriangulo2);
+                                }
+                                case 10 -> {
+                                    
+                               System.out.print("Ingrese la primera palabra: ");
+                               String calculoPalabra1 = scaneador.next();
+                               System.out.print("Ingrese la segunda palabra: ");
+                               String calculoPalabra2 = scaneador.next();
+                               LogicaBooleanaController logicaBooleana = new LogicaBooleanaController();
+                               boolean sonIguales2 = logicaBooleana.compararCadenas(calculoPalabra1, calculoPalabra2);
+                               System.out.print("¿Las palabras son exactamente iguales?: ");
+                               System.out.println(sonIguales2);
                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }

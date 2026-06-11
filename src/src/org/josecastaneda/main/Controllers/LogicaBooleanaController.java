@@ -84,4 +84,11 @@ public class LogicaBooleanaController {
         return false;
     }
 }
+    public boolean compararCadenas(String palabra1, String palabra2) {
+    if (palabra1.equals(palabra2)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 }
