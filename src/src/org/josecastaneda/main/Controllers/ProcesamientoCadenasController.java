@@ -42,4 +42,12 @@ public class ProcesamientoCadenasController {
     String textoEnMayusculas = textoMixto.toUpperCase();
     return textoEnMayusculas;
 }
+        public String conversorBinarioParImpar(String textoBinario) {
+
+    if (textoBinario.length() % 2 == 0) {
+        return "par";
+    } else {
+        return "impar";
+    }
+}
 }

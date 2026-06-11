@@ -172,9 +172,10 @@ public class Main {
                             System.out.println("4. Detector de Vocales");
                             System.out.println("5. Extractor de Iniciales");
                             System.out.println("6. Normalizador a Mayúsculas");
+                            System.out.println("7. Conversor Binario");
                             System.out.println("99. Regresar Menu Principal");
-                             System.out.print("Seleccione: ");
-                             System.out.println("");
+                            System.out.print("Seleccione: ");
+                            System.out.println("");
                             opcion_modulo_b = scaneador.nextInt();
                             scaneador.nextLine();
                             switch (opcion_modulo_b) {
@@ -237,6 +238,15 @@ public class Main {
                                 String calculoMayusculas2 = procesamientoCadenas.normalizadorMayusculas(calculoTexto1);
                                 System.out.print("Texto normalizado: ");
                                 System.out.println(calculoMayusculas2);
+                                }
+                                case 7 -> {
+                                    
+                                System.out.print("Ingrese un texto en binario (solo 0 y 1): ");
+                                String calculoBinario1 = scaneador.next();
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                String calculoResultado2 = procesamientoCadenas.conversorBinarioParImpar(calculoBinario1);
+                                System.out.print("La longitud del texto binario es: ");
+                                System.out.println(calculoResultado2);
                                 }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
