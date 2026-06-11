@@ -248,6 +248,15 @@ public class Main {
                                 System.out.print("La longitud del texto binario es: ");
                                 System.out.println(calculoResultado2);
                                 }
+                                case 8 -> {
+                                System.out.print("Ingrese la palabra que desea repetir: ");
+                                String calculoPalabra1 = scaneador.next();
+                                System.out.print("Ingrese la cantidad de veces (N) que se repetira: ");
+                                int calculoVeces1 = scaneador.nextInt();
+                                ProcesamientoCadenasController procesamientoCadenas = new ProcesamientoCadenasController();
+                                System.out.print("Resultado: ");
+                                procesamientoCadenas.repetidorPalabras(calculoPalabra1, calculoVeces1);    
+                                }
                                 default -> System.out.println("Opcion no valida. Intente de nuevo.");
                             }
                         }

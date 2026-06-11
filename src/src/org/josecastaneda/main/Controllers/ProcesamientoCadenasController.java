@@ -50,4 +50,10 @@ public class ProcesamientoCadenasController {
         return "impar";
     }
 }
+        public void repetidorPalabras(String palabra, int vecesN) {
+    for (int i = 0; i < vecesN; i++) {
+        System.out.print(palabra + " ");
+    }
+    System.out.println();
+}
 }
